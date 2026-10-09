@@ -57,6 +57,12 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
 /* ---------- 期間バー ---------- */
 
 
+/* ---------- FV（ヘッダー帯＋画像） ---------- */
+.fv-head{background:var(--ink);padding:16px 0;text-align:center}
+.fv-head .logo{width:150px;margin:0 auto}
+.fv-main img{width:100%;height:auto}
+@media (max-width:767px){.fv-head{padding:12px 0}.fv-head .logo{width:112px}}
+
 /* ---------- 期間・カウントダウン ---------- */
 .bar{background:var(--ink);color:#fff;text-align:center}
 .bar .wrap{display:flex;flex-direction:column;align-items:center;padding:40px 0 42px}
@@ -199,7 +205,7 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
   .fv-copy{display:contents}
   .fv-logo{order:0;width:112px;margin:22px 20px 0}
   .fv-copy > div{order:1;padding:0 20px}
-  .strips{order:2;grid-template-columns:1fr 1fr;margin-top:26px}
+  .strips{order:2;grid-template-columns:1fr 1fr}
   .strip figcaption{padding:8px 12px;font-size:10px;letter-spacing:.14em}
   .strip figcaption b{font-size:17px}
   .fv-title{margin-top:30px}
@@ -267,7 +273,7 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
   .fv-date{margin-top:28px;gap:14px}
   .fv-date .d{font-size:32px}
   .fv-note{padding:8px 48px}
-  .strips{order:2;margin-top:36px}
+  .strips{order:2}
   /* POINT */
   .point{padding:110px 0 100px}
   .point-grid{grid-template-columns:auto 1fr;gap:44px}
@@ -351,20 +357,8 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
 
 <!-- ===== FV ===== -->
 <header class="fv">
-  <div class="fv-copy">
-    <a href="https://www.rakuten.co.jp/yunth/" class="fv-logo logo ink"><img src="images/logo-ink.png" alt="Yunth"></a>
-    <div>
-      <h1 class="fv-title">
-        
-        <span class="l1">Rakuten</span>
-        <span class="l2">Brand Day</span>
-      </h1>
-      <div class="fv-date">
-        <p class="d">10.20<em>TUE</em><span>0:00</span></p><i></i>
-        <p class="d">10.21<em>WED</em><span>23:59</span></p>
-      </div>
-    </div>
-  </div>
+  <div class="fv-head"><a href="https://www.rakuten.co.jp/yunth/" class="logo"><img src="images/logo.png" alt="Yunth"></a></div>
+  <h1 class="fv-main"><img src="images/fv.jpg" width="1600" height="2291" alt="Rakuten Brand Day 10/20(火)0:00〜10/21(水)23:59 エントリーで対象商品ポイント最大24倍／対象商品に特別セット 生VCシートマスク1枚"></h1>
   <div class="strips" id="strips">
     <figure class="strip on" style="--c:var(--vc)"><div class="im"><img src="images/serum-vc.jpg?v=2" alt="生VC美白美容液"></div><figcaption><b>VC</b></figcaption></figure>
     <figure class="strip" style="--c:var(--va)"><div class="im"><img src="images/serum-va.jpg?v=2" alt="生VA美容液"></div><figcaption><b>VA</b></figcaption></figure>
