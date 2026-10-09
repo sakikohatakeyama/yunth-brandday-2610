@@ -571,14 +571,16 @@ document.querySelectorAll("[data-group]").forEach(el => {
   const cv = document.getElementById("confetti");
   if (!cv || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const ctx = cv.getContext("2d");
-  const colors = ["#ffffff", "#ffffff", "#d9b36c", "#e8cc8e"];
+  const colors = ["#ffffff", "#ffffff", "#d9b36c", "#e8cc8e", "#e3203b"];
   let w = 0, h = 0, dpr = 1, ps = [], raf = 0, visible = true;
+  /* 中央を避けて左右の端寄りに */
+  const edgeX = () => { const r = Math.pow(Math.random(), 1.4) * .3 * w; return Math.random() < .5 ? r : w - r; };
   const make = (top) => ({
-    x: Math.random() * w,
+    x: edgeX(),
     y: top ? Math.random() * h : -20 - Math.random() * 40,
     s: 5 + Math.random() * 6,
     vy: .5 + Math.random() * .9,
-    vx: -.3 + Math.random() * .6,
+    vx: -.15 + Math.random() * .3,
     rot: Math.random() * Math.PI * 2,
     vr: -.06 + Math.random() * .12,
     sway: Math.random() * Math.PI * 2,
