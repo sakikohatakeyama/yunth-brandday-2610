@@ -365,7 +365,7 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
     <figure class="strip on" style="--c:var(--vc)"><div class="im"><img src="images/serum-vc.jpg?v=2" alt="生VC美白美容液"></div><figcaption><b>VC</b></figcaption></figure>
     <figure class="strip" style="--c:var(--va)"><div class="im"><img src="images/serum-va.jpg?v=2" alt="生VA美容液"></div><figcaption><b>VA</b></figcaption></figure>
     <figure class="strip" style="--c:var(--az)"><div class="im"><img src="images/serum-az.jpg?v=2" alt="生AZ美容液"></div><figcaption><b>AZ</b></figcaption></figure>
-    <figure class="strip" style="--c:var(--pdrn)"><div class="im"><img src="images/serum-pdrn.jpg?v=2" alt="生PDRN美容液"></div><figcaption><b>PDRN<sup>※</sup></b></figcaption></figure>
+    <figure class="strip" style="--c:var(--pdrn)"><div class="im"><img src="images/serum-pdrn.jpg?v=2" alt="生PDRN美容液"></div><figcaption><b>PDR<span class="nw">N<sup>※</sup></span></b></figcaption></figure>
   </div>
   <p class="note fv-note">※PDRN：DNA-Na(保湿)</p>
 </header>
@@ -389,7 +389,7 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
 <section class="gift" id="gift">
   <div class="wrap">
     <div class="gift-head rv">
-      <h2>美容液に<br><span style="white-space:nowrap">生VCシートマスク</span><br class="sp"><span style="white-space:nowrap">1枚をセット<sup>※3</sup></span></h2>
+      <h2>美容液に<br><span style="white-space:nowrap">生VCシートマスク</span><br class="sp"><span style="white-space:nowrap">1枚をセッ<span class="nw">ト<sup>※3</sup></span></span></h2>
     </div>
     <div class="gift-body">
       <div class="serum4 rv" id="serum4"></div>
@@ -408,7 +408,7 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
   <div class="wrap">
     <div class="items-head rv">
       <h2><small>01 Serum</small>美容液</h2>
-      <p>ポイント20倍 ＋ 生VCシートマスク1枚をセット<sup>※3</sup></p>
+      <p>ポイント20倍 ＋ 生VCシートマスク1枚をセッ<span class="nw">ト<sup>※3</sup></span></p>
     </div>
     <div class="serums" id="serums"></div>
     <p class="note">※1 メラニンの生成を抑え、しみ・そばかすを防ぐ　※2 DNA-Na(保湿)　※3【公式】Yunth Store楽天市場店でご購入に限る。<br>＊医薬部外品 薬用ホワイトエッセンスPVC α／薬用VAセラム</p>
@@ -446,7 +446,7 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
     <ul>
       <li><b>ポイント20倍の対象期間は、10月20日(火)0:00〜10月21日(水)23:59のご注文分です。</b></li>
       <li>シートマスク1袋〜3袋、Christmas商品（ホリデーコレクション2026）、その他ギフト商品はポイント20倍の対象外です。</li>
-      <li>生VCシートマスク1枚のセット<sup>※3</sup>は、対象の美容液（生VC美白<sup>※1</sup>美容液<sup>＊</sup>・生VA美容液<sup>＊</sup>・生AZ美容液・生PDRN<sup>※2</sup>美容液）が対象です。</li>
+      <li>生VCシートマスク1枚のセッ<span class="nw">ト<sup>※3</sup></span>は、対象の美容液（生VC美<span class="nw">白<sup>※1</sup></span>美容<span class="nw">液<sup>＊</sup></span>・生VA美容<span class="nw">液<sup>＊</sup></span>・生AZ美容液・生PDR<span class="nw">N<sup>※2</sup></span>美容液）が対象です。</li>
       <li>ポイントの付与時期・上限は楽天市場のルールに準じます。</li>
       <li>画像はイメージです。価格は掲載時点のものです。最新の情報は各商品ページをご確認ください。</li>
     </ul>
@@ -468,10 +468,10 @@ const ITEM = c => `https://item.rakuten.co.jp/yunth/${c}/`;
 
 /* 美容液（W特典対象） */
 const SERUMS = [
-  {code:"10000000", img:"serum-vc.jpg?v=2", tag:"VC", c:"var(--vc)", c2:"#d4566f", name:"生VC美白<sup>※1</sup>美容液<sup>＊</sup>", vol:"1ml×28包", price:"3,960"},
-  {code:"yb-116-001", img:"serum-va.jpg?v=2", tag:"VA", c:"var(--va)", c2:"#b47643", name:"生VA美容液<sup>＊</sup>", vol:"1ml×28包", price:"4,950"},
+  {code:"10000000", img:"serum-vc.jpg?v=2", tag:"VC", c:"var(--vc)", c2:"#d4566f", name:"生VC美<span class='nw'>白<sup>※1</sup></span>美容<span class='nw'>液<sup>＊</sup></span>", vol:"1ml×28包", price:"3,960"},
+  {code:"yb-116-001", img:"serum-va.jpg?v=2", tag:"VA", c:"var(--va)", c2:"#b47643", name:"生VA美容<span class='nw'>液<sup>＊</sup></span>", vol:"1ml×28包", price:"4,950"},
   {code:"yb-125-001", img:"serum-az.jpg?v=2", tag:"AZ", c:"var(--az)", c2:"#3a96a4", name:"生AZ美容液", vol:"1ml×28包", price:"3,960"},
-  {code:"yb-126-001", img:"serum-pdrn.jpg?v=2", tag:"PDRN<sup>※2</sup>", c:"var(--pdrn)", c2:"#7b8190", name:"生PDRN<sup>※2</sup>美容液", vol:"1ml×28包", price:"3,960"},
+  {code:"yb-126-001", img:"serum-pdrn.jpg?v=2", tag:"PDRN<sup>※2</sup>", c:"var(--pdrn)", c2:"#7b8190", name:"生PDR<span class='nw'>N<sup>※2</sup></span>美容液", vol:"1ml×28包", price:"3,960"},
 ];
 
 /* その他の対象商品 */
@@ -479,21 +479,21 @@ const GOODS = {
   skincare:[
     {code:"yb-120-001", name:"フュージョンクレンジング 120ml", price:"3,289"},
     {code:"yb-115-001", name:"生VCホワイトクリアフォーム 120g", price:"3,960"},
-    {code:"111-01", name:"生VC美白<sup>※1</sup>化粧水<sup>＊</sup> 120ml", price:"3,960"},
+    {code:"111-01", name:"生VC美<span class='nw'>白<sup>※1</sup></span>化粧<span class='nw'>水<sup>＊</sup></span> 120ml", price:"3,960"},
     {code:"yb-117-001", name:"生VCホワイト乳液 75ml", price:"3,960"},
-    {code:"10000007", name:"生VC美白<sup>※1</sup>クリーム<sup>＊</sup> 30g", price:"3,960"},
+    {code:"10000007", name:"生VC美<span class='nw'>白<sup>※1</sup></span>クリー<span class='nw'>ム<sup>＊</sup></span> 30g", price:"3,960"},
   ],
   mask:[
     {code:"ys-r129", name:"ピュアマスク Pure Mask 7枚入り（4袋・8袋セット）", price:"6,820"},
-    {code:"10000001", name:"美白<sup>※1</sup>シートマスク<sup>＊</sup> 22ml×6枚", price:"1,980"},
+    {code:"10000001", name:"美<span class='nw'>白<sup>※1</sup></span>シートマス<span class='nw'>ク<sup>＊</sup></span> 22ml×6枚", price:"1,980"},
     {code:"yb-121-001", name:"マルチスクエアシートマスク", price:"2,640"},
-    {code:"yb-118-001", name:"VAリンクルアイセラム<sup>＊</sup> 10ml", price:"4,950"},
-    {code:"yb-114-001", name:"薬用リップセラムVCP<sup>＊</sup>", price:"1,650"},
-    {code:"yb-113-001", name:"美白<sup>※1</sup>ハンドセラム<sup>＊</sup> 35g", price:"1,980"},
+    {code:"yb-118-001", name:"VAリンクルアイセラ<span class='nw'>ム<sup>＊</sup></span> 10ml", price:"4,950"},
+    {code:"yb-114-001", name:"薬用リップセラムVC<span class='nw'>P<sup>＊</sup></span>", price:"1,650"},
+    {code:"yb-113-001", name:"美<span class='nw'>白<sup>※1</sup></span>ハンドセラ<span class='nw'>ム<sup>＊</sup></span> 35g", price:"1,980"},
   ],
   more:[
-    {code:"112", name:"生VCトーンアップUV<sup>＊</sup> 30g", price:"2,970"},
-    {code:"yb-123-001", name:"クッションファンデーション エアレス<sup>＊</sup> 15g", price:"3,960"},
+    {code:"112", name:"生VCトーンアップU<span class='nw'>V<sup>＊</sup></span> 30g", price:"2,970"},
+    {code:"yb-123-001", name:"クッションファンデーション エアレ<span class='nw'>ス<sup>＊</sup></span> 15g", price:"3,960"},
     {code:"yb-119-001", name:"飲むビタミンC", price:"3,960"},
     {code:"yth-260", img:"deepboost-led.jpg", name:"美顔器 Deep Boost", price:"33,000"},
   ],
@@ -511,7 +511,7 @@ document.getElementById("serums").innerHTML = SERUM_LAYOUT.map(([tag, size]) => 
       <h3>${s.name}</h3>
       <p class="vol">${s.vol}</p>
       <p class="price"><b>${s.price}</b>円〜（税込）</p>
-      <p class="perks"><span class="r">ポイント20倍</span><span>＋生VCシートマスク1枚をセット<sup>※3</sup></span></p>
+      <p class="perks"><span class="r">ポイント20倍</span><span>＋生VCシートマスク1枚をセッ<span class='nw'>ト<sup>※3</sup></span></span></p>
       <a class="btn" href="${ITEM(s.code)}">商品ページへ</a>
     </div>
   </article>`).join("");
