@@ -68,26 +68,26 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
 
 /* ---------- 期間・カウントダウン ---------- */
 .bar{background:var(--ink);color:#fff;text-align:center}
-.bar .wrap{display:flex;flex-direction:column;align-items:center;padding:40px 0 42px}
-.b-lbl{display:inline-block;font-weight:700;font-size:15px;letter-spacing:.3em;padding:2px 0 2px .3em;border-bottom:1px solid rgba(255,255,255,.5)}
-.b-date{margin-top:14px;font-weight:700;font-size:20px;letter-spacing:.06em;line-height:1.5}
-.b-date b{font-family:var(--en);font-weight:500;font-size:36px;letter-spacing:.03em;margin:0 .14em}
+.bar .wrap{display:flex;flex-direction:column;align-items:center;padding:26px 0 26px}
+.b-lbl{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.3em;padding:2px 0 2px .3em;border-bottom:1px solid rgba(255,255,255,.5)}
+.b-date{margin-top:8px;font-weight:700;font-size:16px;letter-spacing:.06em;line-height:1.5}
+.b-date b{font-family:var(--en);font-weight:500;font-size:28px;letter-spacing:.03em;margin:0 .14em}
 .b-date i{font-style:normal;margin:0 .3em}
 .nw{white-space:nowrap}
-.timer{display:flex;align-items:baseline;justify-content:center;flex-wrap:wrap;gap:4px 16px;margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.22);min-width:min(560px,100%);font-family:var(--en);font-weight:500}
-.timer .t-lbl{font-family:var(--sans);font-weight:700;font-size:17px;letter-spacing:.14em;color:#ffb3bf}
-.timer .t-num{font-size:44px;letter-spacing:.04em;color:#ff7d90;line-height:1.2}
-.timer .t-num small{font-family:var(--sans);font-weight:700;font-size:15px;margin:0 .4em 0 .12em;color:#fff}
+.timer{display:flex;align-items:baseline;justify-content:center;flex-wrap:wrap;gap:4px 16px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.22);min-width:min(480px,100%);font-family:var(--en);font-weight:500}
+.timer .t-lbl{font-family:var(--sans);font-weight:700;font-size:15px;letter-spacing:.14em;color:#ffb3bf}
+.timer .t-num{font-size:36px;letter-spacing:.04em;color:#ff7d90;line-height:1.2}
+.timer .t-num small{font-family:var(--sans);font-weight:700;font-size:13px;margin:0 .4em 0 .12em;color:#fff}
 @media (max-width:767px){
-  .bar .wrap{padding:30px 0 32px}
-  .b-lbl{font-size:13px}
-  .b-date{display:flex;flex-direction:column;align-items:center;font-size:16px}
-  .b-date b{font-size:28px}
-  .b-date i{line-height:1;margin:2px 0}
-  .timer{flex-direction:column;align-items:center;margin-top:18px;padding-top:18px}
-  .timer .t-lbl{font-size:14px}
-  .timer .t-num{font-size:34px}
-  .timer .t-num small{font-size:12px}
+  .bar .wrap{padding:20px 0 22px}
+  .b-lbl{font-size:12px}
+  .b-date{flex-wrap:wrap;justify-content:center;font-size:13px}
+  .b-date b{font-size:21px}
+  .b-date i{margin:0 .2em}
+  .timer{flex-direction:column;align-items:center;gap:0;margin-top:12px;padding-top:12px}
+  .timer .t-lbl{font-size:12px}
+  .timer .t-num{font-size:28px}
+  .timer .t-num small{font-size:11px}
 }
 
 /* ---------- POINT 20（画像） ---------- */
@@ -226,7 +226,7 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
   .term{flex-direction:column;gap:4px}
   .term dd{font-size:15px}
   .term dd span{font-size:19px}
-  .gift{padding:84px 0 80px}
+  .gift{padding:48px 0 80px}
   .gift-head{margin-bottom:36px}
   .gift-head h2{font-size:24px}
   .gift-head h2 small{font-size:13px}
@@ -288,7 +288,7 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
   .term dd{font-size:16px}
   .term dd span{font-size:20px}
   /* セット */
-  .gift{padding:110px 0 100px}
+  .gift{padding:64px 0 100px}
   .gift-head{margin-bottom:48px}
   .gift-head h2{font-size:34px}
   .gift-body{grid-template-columns:1.55fr 36px 1fr;gap:16px}
@@ -427,7 +427,7 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
   <div class="wrap">
     <div class="items-head rv"><h2><small>03 Special Care</small>マスク・スペシャルケア</h2><p>シートマスクは1袋〜3袋が対象外です</p></div>
     <div class="grid g3" data-group="mask"></div>
-    <p class="note">※1 メラニンの生成を抑え、しみ・そばかすを防ぐ</p>
+    <p class="note">※1 メラニンの生成を抑え、しみ・そばかすを防ぐ<br>＊医薬部外品 Yunth 美白シートマスクS／薬用 アイセラム R／Yunth 生VCリップ美容液 VCP／薬用クリームBN MA／薬用 ホワイトニング ハンドセラム OS</p>
   </div>
 </section>
 
@@ -484,11 +484,11 @@ const GOODS = {
   ],
   mask:[
     {code:"ys-r129", name:"ピュアマスク Pure Mask 7枚入り（4袋・8袋セット）", price:"6,820"},
-    {code:"10000001", name:"美白<sup>※1</sup>シートマスク 22ml×6枚", price:"1,980"},
+    {code:"10000001", name:"美白<sup>※1</sup>シートマスク<sup>＊</sup> 22ml×6枚", price:"1,980"},
     {code:"yb-121-001", name:"マルチスクエアシートマスク", price:"2,640"},
-    {code:"yb-118-001", name:"VAリンクルアイセラム 10ml", price:"4,950"},
-    {code:"yb-114-001", name:"薬用リップセラムVCP", price:"1,650"},
-    {code:"yb-113-001", name:"美白<sup>※1</sup>ハンドセラム 35g", price:"1,980"},
+    {code:"yb-118-001", name:"VAリンクルアイセラム<sup>＊</sup> 10ml", price:"4,950"},
+    {code:"yb-114-001", name:"薬用リップセラムVCP<sup>＊</sup>", price:"1,650"},
+    {code:"yb-113-001", name:"美白<sup>※1</sup>ハンドセラム<sup>＊</sup> 35g", price:"1,980"},
   ],
   more:[
     {code:"112", name:"生VCトーンアップUV 30g", price:"2,970"},
