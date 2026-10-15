@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow"><!-- デモ公開用：納品時は削除 -->
+<title>Rakuten Brand Day｜Yunth（ユンス）公式 楽天市場店</title>
+<meta name="description" content="Yunth Rakuten Brand Day。10月20日(火)0:00〜10月21日(水)23:59、対象商品ポイント20倍。美容液に生VCシートマスクをセット。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho+B1:wght@700;800&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#e3203b; --red-d:#b9122a; --pink:#f25a7a; --blush:#fbeeee; --cream:#fbf8f5;
+  --ink:#5d4c53; --ink2:#857479; --line:#e6dcdb;
+  --vc:#ef8fa3; --va:#d9a173; --az:#6fc0cc; --pdrn:#a9aeb8;
+  --sans:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif; --en:"Jost",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.9;letter-spacing:.06em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.06em}
+.pc{display:inline}.sp{display:none}
+.wrap{width:min(1180px,100% - 48px);margin:0 auto}
+.note{font-size:11.5px;line-height:1.75;letter-spacing:.03em;color:var(--ink2)}
+.logo{display:block}
+.logo img{width:100%;height:auto}
+.logo.ink img{filter:none}
+.eyebrow{font-family:var(--en);font-weight:500;font-size:13px;letter-spacing:.42em;text-transform:uppercase}
+
+/* ---------- FV ---------- */
+.fv{position:relative;display:grid;grid-template-columns:minmax(420px,44%) 1fr;min-height:min(100vh,880px);background:#fff;overflow:hidden}
+.fv-copy{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:space-between;padding:44px clamp(28px,4vw,72px) 48px}
+.fv-logo{width:118px;color:var(--ink)}
+.fv-title{font-family:var(--en);font-weight:600;line-height:1;letter-spacing:.01em}
+.fv-title small{display:block;font-family:var(--en);font-size:13px;font-weight:500;letter-spacing:.5em;color:var(--red);margin-bottom:26px}
+.fv-title .l1{display:block;font-size:clamp(58px,6.2vw,104px)}
+.fv-title .l2{display:block;font-size:clamp(58px,6.2vw,104px);color:var(--red)}
+.fv-date{display:flex;align-items:center;gap:18px;margin-top:34px;font-family:var(--en);font-weight:500}
+.fv-date .d{font-size:clamp(26px,2.4vw,36px);letter-spacing:.04em}
+.fv-date .d em{font-style:normal;font-size:.42em;letter-spacing:.14em;margin-left:.3em;vertical-align:.35em}
+.fv-date .d span{font-size:.5em;letter-spacing:.06em;margin-left:.3em}
+.fv-date i{width:34px;height:1px;background:var(--ink)}
+.fv-note{order:2;margin:0;padding:8px 20px;background:#fff;text-align:right}
+/* 美容液4色のストリップ */
+
+/* 美容液4色：正方形で商品全体を見せる */
+.strips{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;background:#fff}
+.strip{position:relative;overflow:hidden;background:#fff}
+.strip .im{overflow:hidden}
+.strip img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform 2.4s ease}
+.strip.on img{transform:scale(1.06)}
+.strip figcaption{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:10px 14px;background:var(--c);color:#fff;font-family:var(--en);font-weight:500;font-size:11px;letter-spacing:.2em;white-space:nowrap}
+.strip figcaption b{font-weight:600;font-size:20px;letter-spacing:.06em}
+
+/* ---------- 期間バー ---------- */
+
+
+/* ---------- FV（ヘッダー帯＋画像） ---------- */
+.fv-head{background:var(--ink);padding:16px 0;text-align:center}
+.fv-head .logo{width:150px;margin:0 auto}
+.fv-main{position:relative}
+.fv-main img{width:100%;height:auto}
+.confetti{position:absolute;left:0;top:0;width:100%;height:33%;pointer-events:none;-webkit-mask-image:linear-gradient(#000 65%,transparent);mask-image:linear-gradient(#000 65%,transparent)}
+.fv-cap{position:absolute;left:0;right:0;bottom:2.2%;margin:0;text-align:center;font-size:12px;line-height:1.4;letter-spacing:.04em;color:var(--ink2);pointer-events:none}
+@media (max-width:767px){.fv-head{padding:12px 0}.fv-head .logo{width:112px}.fv-cap{font-size:10.5px;letter-spacing:.02em}}
+
+/* ---------- 期間・カウントダウン ---------- */
+.bar{background:var(--ink);color:#fff;text-align:center}
+.bar .wrap{display:flex;flex-direction:column;align-items:center;padding:26px 0 26px}
+.b-lbl{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.3em;padding:2px 0 2px .3em;border-bottom:1px solid rgba(255,255,255,.5)}
+.b-date{margin-top:8px;font-weight:700;font-size:16px;letter-spacing:.06em;line-height:1.5}
+.b-date b{font-family:var(--en);font-weight:500;font-size:28px;letter-spacing:.03em;margin:0 .14em}
+.b-date i{font-style:normal;margin:0 .3em}
+.nw{white-space:nowrap}
+.timer{display:flex;align-items:baseline;justify-content:center;flex-wrap:wrap;gap:4px 16px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.22);min-width:min(480px,100%);font-family:var(--en);font-weight:500}
+.timer .t-lbl{font-family:var(--sans);font-weight:700;font-size:15px;letter-spacing:.14em;color:#ffb3bf}
+.timer .t-num{font-size:36px;letter-spacing:.04em;color:#ff7d90;line-height:1.2}
+.timer .t-num small{font-family:var(--sans);font-weight:700;font-size:13px;margin:0 .4em 0 .12em;color:#fff}
+@media (max-width:767px){
+  .bar .wrap{padding:20px 0 22px}
+  .b-lbl{font-size:12px}
+  .b-date{flex-wrap:wrap;justify-content:center;font-size:13px}
+  .b-date b{font-size:21px}
+  .b-date i{margin:0 .2em}
+  .timer{flex-direction:column;align-items:center;gap:0;margin-top:12px;padding-top:12px}
+  .timer .t-lbl{font-size:12px}
+  .timer .t-num{font-size:28px}
+  .timer .t-num small{font-size:11px}
+}
+
+/* ---------- POINT 20（画像） ---------- */
+.point-img{background:#fbf3a8}
+.point-img img{width:100%;height:auto}
+.entry{margin-top:-13px;padding:0 24px 38px;text-align:center}
+.entry-btn{display:inline-flex;align-items:center;justify-content:center;gap:16px;width:min(440px,100%);min-height:62px;padding:0 28px;border-radius:999px;background:#ff7c91;color:#fff;font-weight:700;font-size:18px;letter-spacing:.14em;box-shadow:0 6px 0 #e0566e;transition:transform .15s,box-shadow .15s}
+.entry-btn::after{content:"";width:9px;height:9px;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg)}
+.entry-btn:hover{transform:translateY(3px);box-shadow:0 3px 0 #e0566e}
+/* キラッと光が流れる */
+.entry-btn{position:relative;overflow:hidden}
+.entry-btn::before{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);transform:skewX(-20deg);animation:shine 3s ease-in-out infinite;pointer-events:none}
+@keyframes shine{0%{left:-60%}35%,100%{left:130%}}
+@media (prefers-reduced-motion:reduce){.entry-btn::before{animation:none;display:none}}
+@media (max-width:767px){.entry{margin-top:0;padding:0 20px 28px}.entry-btn{min-height:56px;font-size:16px;letter-spacing:.1em}}
+.point-img .note{padding:10px 20px 14px;text-align:center;background:var(--cream)}
+/* ---------- POINT 20 ---------- */
+.point{padding:140px 0 120px;background:var(--cream)}
+.point-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center}
+.big20{position:relative;font-family:var(--en);font-weight:600;color:var(--red);line-height:.8;font-size:clamp(210px,23vw,350px);letter-spacing:-.03em}
+.big20 .x{position:absolute;left:-.04em;top:-.02em;font-size:.2em;letter-spacing:0;color:var(--ink)}
+.big20 .bai{font-family:var(--sans);font-weight:900;font-size:.24em;letter-spacing:0;margin-left:.06em}
+.point-copy h2,.gift-head h2{font-family:"Shippori Mincho B1",serif}
+.point-copy h2{font-weight:800;font-size:clamp(30px,3vw,42px);line-height:1.5;letter-spacing:.04em}
+.point-copy h2 em{font-style:normal;color:var(--red)}
+.point-copy .lead{margin-top:22px;font-size:17px;line-height:2}
+.term{display:flex;gap:24px;margin-top:34px;padding:20px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.term dt{flex:none;font-family:var(--en);font-weight:500;font-size:13px;letter-spacing:.3em;padding-top:4px}
+.term dd{font-weight:700;font-size:17px;letter-spacing:.06em}
+.term dd span{font-family:var(--en);font-weight:500;font-size:22px;letter-spacing:.04em}
+
+/* ---------- W特典 ---------- */
+.gift{position:relative;background:var(--blush);padding:130px 0 120px;overflow:hidden}
+.gift-head{margin-bottom:64px}
+.gift-head h2{font-weight:800;font-size:clamp(30px,3.4vw,48px);line-height:1.45;letter-spacing:.08em}
+.gift-head h2 small{display:block;font-size:15px;font-weight:700;letter-spacing:.16em;color:var(--red);margin-bottom:12px}
+.gift-body{display:grid;grid-template-columns:1fr 64px 1fr;align-items:center;gap:28px}
+.serum4{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.serum4 a{position:relative;background:#fff;padding:0 0 14px;transition:transform .3s}
+.serum4 a:hover{transform:translateY(-4px)}
+.serum4 img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.serum4 b{display:block;margin-top:10px;padding:0 14px;font-size:14px;line-height:1.6;letter-spacing:.04em}
+.serum4 i{position:absolute;left:0;top:0;width:100%;height:5px;background:var(--c)}
+.plus{position:relative;width:64px;height:64px}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;background:var(--ink);transform:translate(-50%,-50%)}
+.plus::before{width:64px;height:2px}.plus::after{width:2px;height:64px}
+.mask{text-align:center}
+.mask img{width:min(400px,100%);margin:0 auto;filter:drop-shadow(0 26px 30px rgba(150,40,60,.18))}
+.mask p{margin-top:18px;font-weight:900;font-size:clamp(22px,2vw,28px);letter-spacing:.08em}
+.mask p span{display:block;font-size:14px;font-weight:500;letter-spacing:.1em;color:var(--ink2)}
+.gift .note{margin-top:46px}
+
+/* ---------- MENU ---------- */
+.menu{background:#fff;padding:90px 0}
+.menu h2{font-family:var(--en);font-weight:600;font-size:clamp(40px,4vw,58px);line-height:1;letter-spacing:.02em}
+.menu h2 + p{margin-top:12px;font-weight:700;letter-spacing:.14em}
+.menu-list{display:grid;grid-template-columns:repeat(4,1fr);margin-top:44px;border-top:1px solid var(--ink)}
+.menu-list a{display:flex;flex-direction:column;gap:6px;padding:22px 20px 24px;border-right:1px solid var(--line);transition:background .3s}
+.menu-list a:last-child{border-right:0}
+.menu-list a:hover{background:var(--blush)}
+.menu-list .n{font-family:var(--en);font-weight:600;font-size:28px;line-height:1;color:var(--red)}
+.menu-list b{font-size:18px;letter-spacing:.1em}
+.menu-list span{font-size:13px;color:var(--ink2);letter-spacing:.06em}
+.menu-list .arr{margin-top:auto;font-family:var(--en);font-size:13px;letter-spacing:.3em}
+
+/* ---------- 商品 ---------- */
+.items{padding:120px 0;background:var(--cream)}
+.items + .items{padding-top:0}
+.items-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:22px;border-bottom:1px solid var(--ink);margin-bottom:44px}
+.items-head h2{flex:none;white-space:nowrap;font-weight:900;font-size:clamp(26px,2.6vw,36px);letter-spacing:.1em;line-height:1.4}
+.items-head h2 small{display:block;font-family:var(--en);font-weight:500;font-size:14px;letter-spacing:.3em;text-transform:uppercase;letter-spacing:.04em;color:var(--red)}
+.items-head p{white-space:nowrap;font-size:13px;color:var(--ink2);text-align:right}
+/* 美容液：大きく2列 */
+.serums{display:grid;grid-template-columns:1fr 1fr;gap:56px 48px}
+.serum{display:grid;grid-template-columns:46% 1fr;gap:28px;align-items:center}
+.serum .ph{position:relative;background:#fff}
+.serum .ph img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.serum .ph::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:6px;background:var(--c)}
+.serum .tag{font-family:var(--en);font-weight:600;font-size:13px;letter-spacing:.3em;color:var(--c2)}
+.serum h3{margin-top:6px;font-size:21px;font-weight:900;line-height:1.5;letter-spacing:.06em}
+.serum .vol{font-size:13px;color:var(--ink2)}
+.price{margin-top:10px;font-weight:700;font-size:15px}
+.price b{font-family:var(--en);font-weight:500;font-size:28px;letter-spacing:.02em;margin-right:.1em}
+.perks{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.perks span{font-size:12.5px;font-weight:700;letter-spacing:.06em;padding:3px 10px;background:var(--ink);color:#fff;line-height:1.6}
+.perks span.r{background:var(--red)}
+.btn{display:flex;align-items:center;justify-content:space-between;margin-top:18px;min-height:52px;padding:0 20px;border:1px solid var(--ink);font-weight:700;font-size:15px;letter-spacing:.12em;transition:background .25s,color .25s}
+.btn::after{content:"";width:22px;height:1px;background:currentColor;box-shadow:none;transition:width .25s}
+.btn:hover{background:var(--ink);color:#fff}
+.btn:hover::after{width:32px}
+/* その他：グリッド */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px 24px}
+.grid.g5{grid-template-columns:repeat(5,1fr);gap:40px 20px}
+.grid.g3{grid-template-columns:repeat(3,1fr);gap:48px 32px}
+.card{display:flex;flex-direction:column}
+.card .ph{background:#fff;overflow:hidden}
+.card .ph img{aspect-ratio:1/1;object-fit:cover;width:100%;transition:transform .6s}
+.card:hover .ph img{transform:scale(1.04)}
+.card h3{margin-top:14px;font-size:15px;font-weight:700;line-height:1.65;letter-spacing:.04em}
+.card .price{margin-top:auto;padding-top:6px;font-size:13px}
+.card .price b{font-size:22px}
+.card .p20{display:inline-block;margin-top:8px;align-self:flex-start;font-size:12px;font-weight:700;color:var(--red);border:1px solid var(--red);padding:1px 8px;letter-spacing:.06em}
+.items .note{margin-top:40px}
+
+/* ---------- 注意 ---------- */
+.notice{background:#fff;padding:100px 0 90px}
+.notice h2{font-weight:900;font-size:24px;letter-spacing:.12em;padding-bottom:16px;border-bottom:1px solid var(--ink)}
+.notice ul{margin-top:24px;padding-left:1.2em;font-size:14px;line-height:2;color:var(--ink2)}
+.notice ul b{color:var(--ink)}
+.closing{background:var(--ink);color:#fff;text-align:center;padding:90px 24px 60px}
+.closing .logo{width:130px;margin:0 auto;color:#fff}
+.closing .bd{margin-top:22px;font-family:var(--en);font-weight:600;font-size:30px;letter-spacing:.04em}
+.closing .cta{display:inline-flex;align-items:center;gap:18px;margin-top:40px;min-height:62px;padding:0 44px;background:var(--red);color:#fff;font-weight:700;font-size:17px;letter-spacing:.14em;transition:background .25s}
+.closing .cta:hover{background:var(--red-d)}
+.closing .cta::after{content:"";width:24px;height:1px;background:#fff}
+@media (max-width:767px){.closing .cta{gap:12px;padding:0 24px;font-size:15px;letter-spacing:.08em;white-space:nowrap}.closing .cta::after{width:18px;flex:none}.closing .bd{font-size:min(30px,7.6vw);white-space:nowrap}}
+.closing .law{display:block;margin-top:46px;font-size:13px;letter-spacing:.1em;color:#cbbfc0;text-decoration:underline;text-underline-offset:4px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s}
+.rv.in{opacity:1;transform:none}
+
+/* ============ SP ============ */
+@media (max-width:767px){
+  .pc{display:none}.sp{display:inline}
+  body{font-size:15px}
+  .wrap{width:calc(100% - 40px)}
+  .fv{display:flex;flex-direction:column;min-height:0}
+  .fv-copy{display:contents}
+  .fv-logo{order:0;width:112px;margin:22px 20px 0}
+  .fv-copy > div{order:1;padding:0 20px}
+  .strips{order:2;grid-template-columns:repeat(4,1fr);gap:2px}
+  .strip figcaption{justify-content:center;padding:6px 4px;font-size:10px;letter-spacing:.1em}
+  .strip figcaption b{font-size:14px;letter-spacing:.04em}
+  .fv-title{margin-top:30px}
+  .fv-title small{font-size:11px;margin-bottom:16px;letter-spacing:.4em}
+  .fv-title .l1,.fv-title .l2{font-size:15.5vw}
+  .fv-date{margin-top:20px;gap:12px}
+  .fv-date .d{font-size:24px}
+  .fv-date i{width:20px}
+  .point{padding:84px 0 80px}
+  .point-grid{grid-template-columns:1fr;gap:30px}
+  .big20{font-size:58vw;text-align:center}
+    .point-copy h2{font-size:24px}
+  .point-copy .lead{font-size:15px}
+  .term{flex-direction:column;gap:4px}
+  .term dd{font-size:15px}
+  .term dd span{font-size:19px}
+  .gift{padding:48px 0 80px}
+  .gift-head{margin-bottom:36px}
+  .gift-head h2{font-size:24px}
+  .gift-head h2 small{font-size:13px}
+  .gift-body{grid-template-columns:1fr;gap:22px}
+  .plus{margin:0 auto;width:44px;height:44px}
+  .plus::before{width:44px}.plus::after{height:44px}
+  .serum4{gap:8px}
+  .serum4 b{font-size:12.5px;padding:0 10px}
+  .mask img{width:62%}
+  .mask p{font-size:21px}
+  .menu{padding:70px 0}
+  .menu-list{grid-template-columns:1fr 1fr;margin-top:30px}
+  .menu-list a{padding:16px 14px 18px;border-bottom:1px solid var(--line)}
+  .menu-list a:nth-child(2n){border-right:0}
+  .menu-list b{font-size:16px}
+  .menu-list span{font-size:12px;line-height:1.6}
+  .items{padding:80px 0}
+  .items-head{flex-direction:column;align-items:flex-start;gap:6px;margin-bottom:30px}
+  .items-head h2{font-size:min(24px,6.8vw)}
+  .items-head p{white-space:normal;text-align:left;font-size:13px}
+  .serums{grid-template-columns:1fr;gap:40px}
+  .serum{grid-template-columns:42% 1fr;gap:16px;align-items:start}
+  .serum h3{font-size:17px}
+  .price b{font-size:24px}
+  .perks span{font-size:11px;padding:2px 7px}
+  .btn{min-height:46px;font-size:14px;padding:0 14px}
+  .grid,.grid.g5,.grid.g3{grid-template-columns:1fr 1fr;gap:30px 14px}
+  .card h3{font-size:13.5px}
+  .card .price b{font-size:19px}
+  .card .p20{font-size:11px}
+  .notice{padding:70px 0}
+  .notice ul{font-size:13px}
+}
+
+/* ============ PC：センター750pxカラム ============ */
+@media (min-width:768px){
+  body{background:var(--red)}
+  .page{position:relative;z-index:1;max-width:750px;margin:0 auto;background:var(--cream);overflow:hidden;box-shadow:0 0 60px rgba(60,0,10,.28)}
+  .wrap{width:calc(100% - 96px)}
+  /* FV：縦積み */
+  .fv{display:flex;flex-direction:column;min-height:0}
+  .fv-copy{display:contents}
+  .fv-logo{order:0;width:140px;margin:36px 48px 0}
+  .fv-copy > div{order:1;padding:0 48px}
+  .fv-title{margin-top:44px;grid-column:1/-1}
+  .fv-title small{margin-bottom:20px}
+  .fv-title .l1,.fv-title .l2{font-size:104px}
+  .fv-date{margin-top:28px;gap:14px}
+  .fv-date .d{font-size:32px}
+  .fv-note{padding:8px 48px}
+  .strips{order:2}
+  /* POINT */
+  .point{padding:110px 0 100px}
+  .point-grid{grid-template-columns:auto 1fr;gap:44px}
+  .big20{font-size:200px;white-space:nowrap}
+  .point-copy h2{font-size:27px}
+  .point-copy .lead{font-size:16px}
+  .term{flex-direction:column;gap:4px}
+  .term dd{font-size:16px}
+  .term dd span{font-size:20px}
+  /* セット */
+  .gift{padding:64px 0 100px}
+  .gift-head{margin-bottom:48px}
+  .gift-head h2{font-size:34px}
+  .gift-body{grid-template-columns:1.55fr 36px 1fr;gap:16px}
+  .mask img{width:86%}
+  .mask p{font-size:19px;white-space:nowrap;letter-spacing:.04em}
+  .plus{width:40px;height:40px}
+  .plus::before{width:40px}.plus::after{height:40px}
+  .serum4{gap:8px}
+  .serum4 b{font-size:13px;padding:0 10px}
+  .mask p{font-size:24px}
+  /* MENU */
+  .menu{padding:80px 0}
+  .menu h2{font-size:52px}
+  .menu-list{margin-top:34px}
+  .menu-list a{padding:18px 14px 20px}
+  .menu-list b{font-size:16px}
+  .menu-list span{font-size:12px;line-height:1.6}
+  /* 商品 */
+  .items{padding:100px 0}
+  .items-head{margin-bottom:36px}
+  .items-head h2{font-size:32px}
+  .serums{gap:52px 32px}
+  .serum{grid-template-columns:1fr;gap:18px;align-items:start}
+  .serum h3{font-size:20px}
+  .grid{grid-template-columns:repeat(4,1fr);gap:36px 18px}
+  .grid.g5,.grid.g3{grid-template-columns:repeat(3,1fr);gap:40px 22px}
+  .card h3{font-size:14.5px}
+  .card .price b{font-size:21px}
+  .notice{padding:80px 0}
+  .closing{padding:80px 24px 56px}
+}
+
+/* 両脇：固定の縦ラベル（広い画面のみ） */
+.side{display:none}
+@media (min-width:1180px){
+  .side{display:block;position:fixed;top:50%;z-index:0;color:#fff;font-family:var(--en);font-weight:600;font-size:28px;letter-spacing:.16em;white-space:nowrap;line-height:1}
+  .side.l{left:calc((100vw - 750px)/4);transform:translate(-50%,-50%) rotate(-90deg)}
+  .side.r{right:calc((100vw - 750px)/4);transform:translate(50%,-50%) rotate(90deg);font-family:var(--en);font-weight:500;font-size:22px;letter-spacing:.3em}
+}
+
+/* 美容液一覧：VC・PDRNは大きく1枚ずつ、AZ・VAは横並び */
+.serums{grid-template-columns:1fr 1fr}
+.serum.big{grid-column:1/-1;grid-template-columns:56% 1fr;gap:32px;align-items:center}
+.serum.big h3{font-size:24px}
+.serum.big .price b{font-size:32px}
+.serum.sm{grid-template-columns:1fr;gap:16px;align-items:start}
+@media (max-width:767px){
+  .serums{gap:44px 14px}
+  .serum.big{grid-template-columns:1fr;gap:16px}
+  .serum.big h3{font-size:20px}
+  .serum.sm h3{font-size:15px}
+  .serum.sm .price b{font-size:21px}
+  .serum.sm .perks span{font-size:10.5px;padding:2px 6px}
+  .serum.sm .btn{font-size:13px;padding:0 10px}
+}
+
+@media (prefers-reduced-motion:reduce){.strip,.strip img,.rv{transition:none}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<p class="side l" aria-hidden="true">Rakuten Brand Day</p>
+<p class="side r" aria-hidden="true">10.20 TUE — 10.21 WED</p>
+<div class="page">
+
+<!-- ===== FV ===== -->
+<header class="fv">
+  <div class="fv-head"><a href="https://www.rakuten.co.jp/yunth/" class="logo"><img src="images/logo.png" alt="Yunth"></a></div>
+  <div class="fv-main">
+    <h1><img src="images/fv.jpg?v=20" width="1600" height="2290" alt="Rakuten Brand Day 10/20(火)0:00〜10/21(水)23:59 対象商品ポイント20倍／対象商品に特別セット 生VCシートマスク1枚"></h1>
+    <canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+    <p class="fv-cap">※【公式】Yunth Store楽天市場店でご購入に限る。</p>
+  </div>
+  <div class="strips" id="strips">
+    <figure class="strip on" style="--c:var(--vc)"><div class="im"><img src="images/serum-vc.jpg?v=2" alt="生VC美白美容液"></div><figcaption><b>VC</b></figcaption></figure>
+    <figure class="strip" style="--c:var(--va)"><div class="im"><img src="images/serum-va.jpg?v=2" alt="生VA美容液"></div><figcaption><b>VA</b></figcaption></figure>
+    <figure class="strip" style="--c:var(--az)"><div class="im"><img src="images/serum-az.jpg?v=2" alt="生AZ美容液"></div><figcaption><b>AZ</b></figcaption></figure>
+    <figure class="strip" style="--c:var(--pdrn)"><div class="im"><img src="images/serum-pdrn.jpg?v=2" alt="生PDRN美容液"></div><figcaption><b>PDR<span class="nw">N<sup>※</sup></span></b></figcaption></figure>
+  </div>
+  <p class="note fv-note">※PDRN：DNA-Na(保湿)</p>
+</header>
+
+<!-- ===== 期間・タイマー ===== -->
+<div class="bar">
+  <div class="wrap">
+    <p class="b-lbl">開催期間</p>
+    <p class="b-date"><span class="nw"><b>10/20</b>(火)<b>0:00</b></span><i>〜</i><span class="nw"><b>10/21</b>(水)<b>23:59</b></span></p>
+    <div class="timer" id="timer" aria-live="polite"></div>
+  </div>
+</div>
+
+<!-- ===== POINT 20（画像） ===== -->
+<section class="point-img" id="point">
+  <img src="images/point24.jpg" alt="エントリーで最大 対象商品ポイント24倍 10/20(火)0:00〜10/21(水)23:59 美容液もスキンケアも、まとめてそろえるなら今。">
+  <div class="entry"><a class="entry-btn" href="https://event.rakuten.co.jp/brand/campaign/?scid=wi_ichi_rbd_20261020_shop_bnr_top">エントリーはこちら</a></div>
+  <p class="note">※最大ポイント24倍内訳：対象商品ポイント20倍＋エントリーでポイント5倍（共通ポイント1倍を含む）</p>
+</section>
+
+<!-- ===== W特典 ===== -->
+<section class="gift" id="gift">
+  <div class="wrap">
+    <div class="gift-head rv">
+      <h2>美容液に<br><span style="white-space:nowrap">生VCシートマスク</span><br class="sp"><span style="white-space:nowrap">1枚をセッ<span class="nw">ト<sup>※3</sup></span></span></h2>
+    </div>
+    <div class="gift-body">
+      <div class="serum4 rv" id="serum4"></div>
+      <span class="plus" aria-hidden="true"></span>
+      <div class="mask rv">
+        <img src="images/vc-mask.png" alt="Yunth 生VCシートマスク Pure VC MASK">
+        <p>生VCシートマスク 1枚<span>Pure VC MASK</span></p>
+      </div>
+    </div>
+    <p class="note">※1 メラニンの生成を抑え、しみ・そばかすを防ぐ　※2 DNA-Na(保湿)　※3【公式】Yunth Store楽天市場店でご購入に限る。<br>＊医薬部外品 薬用ホワイトエッセンスPVC α／医薬部外品 薬用VAセラム</p>
+  </div>
+</section>
+
+<!-- ===== 商品 ===== -->
+<section class="items" id="serum">
+  <div class="wrap">
+    <div class="items-head rv">
+      <h2><small>01 Serum</small>美容液</h2>
+      <p>ポイント20倍 ＋ 生VCシートマスク1枚をセッ<span class="nw">ト<sup>※3</sup></span></p>
+    </div>
+    <div class="serums" id="serums"></div>
+    <p class="note">※1 メラニンの生成を抑え、しみ・そばかすを防ぐ　※2 DNA-Na(保湿)　※3【公式】Yunth Store楽天市場店でご購入に限る。<br>＊医薬部外品 薬用ホワイトエッセンスPVC α／医薬部外品 薬用VAセラム</p>
+  </div>
+</section>
+
+<section class="items" id="skincare">
+  <div class="wrap">
+    <div class="items-head rv"><h2><small>02 Skincare</small>スキンケア</h2><p>毎日のベースケアもポイント20倍</p></div>
+    <div class="grid g5" data-group="skincare"></div>
+    <p class="note">※1 メラニンの生成を抑え、しみ・そばかすを防ぐ<br>＊医薬部外品 薬用ホワイトニングローション VCP／医薬部外品 薬用 モイストクリーム PVC</p>
+  </div>
+</section>
+
+<section class="items" id="mask">
+  <div class="wrap">
+    <div class="items-head rv"><h2><small>03 Special Care</small>マスク・スペシャルケア</h2><p>シートマスクは1袋〜3袋が対象外です</p></div>
+    <div class="grid g3" data-group="mask"></div>
+    <p class="note">※1 メラニンの生成を抑え、しみ・そばかすを防ぐ<br>＊医薬部外品 Yunth 美白シートマスクS／医薬部外品 薬用 アイセラム R／医薬部外品 Yunth 生VCリップ美容液 VCP／医薬部外品 薬用クリームBN MA／医薬部外品 薬用 ホワイトニング ハンドセラム OS</p>
+  </div>
+</section>
+
+<section class="items" id="more">
+  <div class="wrap">
+    <div class="items-head rv"><h2><small>04 And More</small>UV・メイク・その他</h2><p>美顔器・インナーケアも対象です</p></div>
+    <div class="grid" data-group="more"></div>
+    <p class="note">＊医薬部外品 薬用トーンアップUV PVC／医薬部外品 クッションファンデーション（エアレス）</p>
+  </div>
+</section>
+
+<!-- ===== 注意事項 ===== -->
+<section class="notice">
+  <div class="wrap">
+    <h2>ご注意事項</h2>
+    <ul>
+      <li><b>ポイント20倍の対象期間は、10月20日(火)0:00〜10月21日(水)23:59のご注文分です。</b></li>
+      <li>シートマスク1袋〜3袋、Christmas商品（ホリデーコレクション2026）、その他ギフト商品はポイント20倍の対象外です。</li>
+      <li>生VCシートマスク1枚のセッ<span class="nw">ト<sup>※3</sup></span>は、対象の美容液（生VC美<span class="nw">白<sup>※1</sup></span>美容<span class="nw">液<sup>＊</sup></span>・生VA美容<span class="nw">液<sup>＊</sup></span>・生AZ美容液・生PDR<span class="nw">N<sup>※2</sup></span>美容液）が対象です。</li>
+      <li>ポイントの付与時期・上限は楽天市場のルールに準じます。</li>
+      <li>画像はイメージです。価格は掲載時点のものです。最新の情報は各商品ページをご確認ください。</li>
+    </ul>
+    <p class="note" style="margin-top:18px">※1 メラニンの生成を抑え、しみ・そばかすを防ぐ　※2 DNA-Na(保湿)　※3【公式】Yunth Store楽天市場店でご購入に限る。<br>＊医薬部外品 薬用ホワイトエッセンスPVC α／医薬部外品 薬用VAセラム</p>
+  </div>
+</section>
+
+<footer class="closing">
+  <span class="logo"><img src="images/logo.png" alt="Yunth"></span>
+  <p class="bd">Rakuten Brand Day</p>
+  <a class="cta" href="https://www.rakuten.co.jp/yunth/">Yunth 楽天市場店トップへ</a>
+  <a class="law" href="https://www.rakuten.co.jp/yunth/info.html">特定商取引法に基づく表記</a>
+</footer>
+
+</div><!-- /.page -->
+
+<script>
+const ITEM = c => `https://item.rakuten.co.jp/yunth/${c}/`;
+
+/* 美容液（W特典対象） */
+const SERUMS = [
+  {code:"10000000", img:"serum-vc.jpg?v=2", tag:"VC", c:"var(--vc)", c2:"#d4566f", name:"生VC美<span class='nw'>白<sup>※1</sup></span>美容<span class='nw'>液<sup>＊</sup></span>", vol:"1ml×28包", price:"3,960"},
+  {code:"yb-116-001", img:"serum-va.jpg?v=2", tag:"VA", c:"var(--va)", c2:"#b47643", name:"生VA美容<span class='nw'>液<sup>＊</sup></span>", vol:"1ml×28包", price:"4,950"},
+  {code:"yb-125-001", img:"serum-az.jpg?v=2", tag:"AZ", c:"var(--az)", c2:"#3a96a4", name:"生AZ美容液", vol:"1ml×28包", price:"3,960"},
+  {code:"yb-126-001", img:"serum-pdrn.jpg?v=2", tag:"PDRN<sup>※2</sup>", c:"var(--pdrn)", c2:"#7b8190", name:"生PDR<span class='nw'>N<sup>※2</sup></span>美容液", vol:"1ml×28包", price:"3,960"},
+];
+
+/* その他の対象商品 */
+const GOODS = {
+  skincare:[
+    {code:"yb-120-001", name:"フュージョンクレンジング 120ml", price:"3,289"},
+    {code:"yb-115-001", name:"生VCホワイトクリアフォーム 120g", price:"3,960"},
+    {code:"111-01", name:"生VC美<span class='nw'>白<sup>※1</sup></span>化粧<span class='nw'>水<sup>＊</sup></span> 120ml", price:"3,960"},
+    {code:"yb-117-001", name:"生VCホワイト乳液 75ml", price:"3,960"},
+    {code:"10000007", name:"生VC美<span class='nw'>白<sup>※1</sup></span>クリー<span class='nw'>ム<sup>＊</sup></span> 30g", price:"3,960"},
+  ],
+  mask:[
+    {code:"ys-r129", name:"ピュアマスク Pure Mask 7枚入り（4袋・8袋セット）", price:"6,820"},
+    {code:"10000001", name:"美<span class='nw'>白<sup>※1</sup></span>シートマス<span class='nw'>ク<sup>＊</sup></span> 22ml×6枚", price:"1,980"},
+    {code:"yb-121-001", name:"マルチスクエアシートマスク", price:"2,640"},
+    {code:"yb-118-001", name:"VAリンクルアイセラ<span class='nw'>ム<sup>＊</sup></span> 10ml", price:"4,950"},
+    {code:"yb-114-001", name:"薬用リップセラムVC<span class='nw'>P<sup>＊</sup></span>", price:"1,650"},
+    {code:"yb-113-001", name:"美<span class='nw'>白<sup>※1</sup></span>ハンドセラ<span class='nw'>ム<sup>＊</sup></span> 35g", price:"1,980"},
+  ],
+  more:[
+    {code:"112", name:"生VCトーンアップU<span class='nw'>V<sup>＊</sup></span> 30g", price:"2,970"},
+    {code:"yb-123-001", name:"クッションファンデーション エアレ<span class='nw'>ス<sup>＊</sup></span> 15g", price:"3,960"},
+    {code:"yb-119-001", name:"飲むビタミンC", price:"3,960"},
+    {code:"yth-260", img:"deepboost-led.jpg", name:"美顔器 Deep Boost", price:"33,000"},
+  ],
+};
+
+document.getElementById("serum4").innerHTML = SERUMS.map(s =>
+  `<a href="${ITEM(s.code)}" style="--c:${s.c}"><i></i><img src="images/${s.img}" alt="" loading="lazy"><b>${s.name}</b></a>`).join("");
+
+const SERUM_LAYOUT = [["VC","big"],["PDRN","big"],["AZ","sm"],["VA","sm"]];
+document.getElementById("serums").innerHTML = SERUM_LAYOUT.map(([tag, size]) => SERUMS.find(x => x.tag.startsWith(tag))).map((s, k) => `
+  <article class="serum ${SERUM_LAYOUT[k][1]} rv" style="--c:${s.c};--c2:${s.c2}">
+    <a class="ph" href="${ITEM(s.code)}"><img src="images/${s.img}" alt="" loading="lazy"></a>
+    <div>
+      <p class="tag">${s.tag}</p>
+      <h3>${s.name}</h3>
+      <p class="vol">${s.vol}</p>
+      <p class="price"><b>${s.price}</b>円〜（税込）</p>
+      <p class="perks"><span class="r">ポイント20倍</span><span>＋生VCシートマスク1枚をセッ<span class='nw'>ト<sup>※3</sup></span></span></p>
+      <a class="btn" href="${ITEM(s.code)}">商品ページへ</a>
+    </div>
+  </article>`).join("");
+
+document.querySelectorAll("[data-group]").forEach(el => {
+  el.innerHTML = GOODS[el.dataset.group].map(g => `
+    <a class="card rv" href="${ITEM(g.code)}">
+      <div class="ph"><img src="images/${g.img || g.code + ".jpg"}" alt="" loading="lazy"></div>
+      <h3>${g.name}</h3>
+      <p class="price"><b>${g.price}</b>円〜</p>
+      <span class="p20">ポイント20倍</span>
+    </a>`).join("");
+});
+
+/* FV：美容液4色のストリップを順番に開く */
+(() => {
+  const strips = [...document.querySelectorAll(".strip")];
+  let i = 0, timer;
+  const show = n => { strips.forEach((s, k) => s.classList.toggle("on", k === n)); i = n; };
+  const loop = () => { clearInterval(timer); timer = setInterval(() => show((i + 1) % strips.length), 3200); };
+  strips.forEach((s, k) => s.addEventListener("mouseenter", () => { show(k); loop(); }));
+  loop();
+})();
+
+/* 期間タイマー：開始前／開催中／終了後 */
+(() => {
+  const START = new Date("2026-10-20T00:00:00+09:00");
+  const END   = new Date("2026-10-21T23:59:59+09:00");
+  const el = document.getElementById("timer");
+  const pad = n => String(n).padStart(2, "0");
+  const fmt = ms => {
+    const s = Math.max(0, Math.floor(ms / 1000));
+    const d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60);
+    return (d ? `${d}<small>日</small>` : "") + `${pad(h)}<small>時間</small>${pad(m)}<small>分</small>${pad(s % 60)}<small>秒</small>`;
+  };
+  const tick = () => {
+    const now = Date.now();
+    if (now < START) el.innerHTML = `<span class="t-lbl">スタートまで</span><span class="t-num">${fmt(START - now)}</span>`;
+    else if (now <= END) el.innerHTML = `<span class="t-lbl">終了まであと</span><span class="t-num">${fmt(END - now)}</span>`;
+    else { el.innerHTML = `<span class="t-lbl">このキャンペーンは終了しました</span>`; return; }
+    setTimeout(tick, 1000);
+  };
+  tick();
+})();
+
+/* スクロールで表示 */
+(() => {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), {rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll(".rv").forEach(el => io.observe(el));
+})();
+/* FV：紙吹雪 */
+(() => {
+  const cv = document.getElementById("confetti");
+  if (!cv || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const ctx = cv.getContext("2d");
+  const colors = ["#ffffff", "#ffffff", "#d9b36c", "#e8cc8e", "#e3203b"];
+  let w = 0, h = 0, dpr = 1, ps = [], raf = 0, visible = true;
+  /* 中央を避けて左右の端寄りに */
+  const edgeX = () => { const r = Math.pow(Math.random(), 1.4) * .3 * w; return Math.random() < .5 ? r : w - r; };
+  const make = (top) => ({
+    x: edgeX(),
+    y: top ? Math.random() * h : -20 - Math.random() * 40,
+    s: 7 + Math.random() * 7,
+    vy: .5 + Math.random() * .9,
+    vx: -.15 + Math.random() * .3,
+    rot: Math.random() * Math.PI * 2,
+    vr: -.06 + Math.random() * .12,
+    sway: Math.random() * Math.PI * 2,
+    c: colors[Math.random() * colors.length | 0]
+  });
+  const resize = () => {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = cv.clientWidth; h = cv.clientHeight;
+    cv.width = w * dpr; cv.height = h * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const n = Math.round(w / 32);
+    ps = Array.from({ length: n }, () => make(true));
+  };
+  const tick = () => {
+    ctx.clearRect(0, 0, w, h);
+    for (const p of ps) {
+      p.sway += .03; p.rot += p.vr;
+      p.x += p.vx + Math.sin(p.sway) * .5; p.y += p.vy;
+      if (p.y > h + 20) Object.assign(p, make(false));
+      ctx.save();
+      ctx.translate(p.x, p.y); ctx.rotate(p.rot);
+      ctx.globalAlpha = .95;
+      ctx.fillStyle = p.c;
+      ctx.shadowColor = "rgba(150,90,80,.25)"; ctx.shadowBlur = 2;
+      ctx.fillRect(-p.s / 2, -p.s / 4 * Math.abs(Math.cos(p.sway)) - 1, p.s, p.s / 2 * Math.abs(Math.cos(p.sway)) + 2);
+      ctx.restore();
+    }
+    raf = visible ? requestAnimationFrame(tick) : 0;
+  };
+  new IntersectionObserver(([e]) => {
+    visible = e.isIntersecting;
+    if (visible && !raf) raf = requestAnimationFrame(tick);
+  }).observe(cv);
+  addEventListener("resize", resize);
+  resize();
+})();
+</script>
+</body>
+</html>
