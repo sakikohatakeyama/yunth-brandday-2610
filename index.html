@@ -93,17 +93,6 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
 /* ---------- POINT 20（画像） ---------- */
 .point-img{background:#fbf3a8}
 .point-img img{width:100%;height:auto}
-.entry{margin-top:-13px;padding:0 24px 38px;text-align:center}
-.entry-btn{display:inline-flex;align-items:center;justify-content:center;gap:16px;width:min(440px,100%);min-height:62px;padding:0 28px;border-radius:999px;background:#ff7c91;color:#fff;font-weight:700;font-size:18px;letter-spacing:.14em;box-shadow:0 6px 0 #e0566e;transition:transform .15s,box-shadow .15s}
-.entry-btn::after{content:"";width:9px;height:9px;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg)}
-.entry-btn:hover{transform:translateY(3px);box-shadow:0 3px 0 #e0566e}
-/* キラッと光が流れる */
-.entry-btn{position:relative;overflow:hidden}
-.entry-btn::before{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);transform:skewX(-20deg);animation:shine 3s ease-in-out infinite;pointer-events:none}
-@keyframes shine{0%{left:-60%}35%,100%{left:130%}}
-@media (prefers-reduced-motion:reduce){.entry-btn::before{animation:none;display:none}}
-@media (max-width:767px){.entry{margin-top:0;padding:0 20px 28px}.entry-btn{min-height:56px;font-size:16px;letter-spacing:.1em}}
-.point-img .note{padding:10px 20px 14px;text-align:center;background:var(--cream)}
 /* ---------- POINT 20 ---------- */
 .point{padding:140px 0 120px;background:var(--cream)}
 .point-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center}
@@ -391,9 +380,7 @@ sup{font-size:clamp(8px,.4em,12px);font-weight:500;vertical-align:super;line-hei
 
 <!-- ===== POINT 20（画像） ===== -->
 <section class="point-img" id="point">
-  <img src="images/point24.jpg" alt="エントリーで最大 対象商品ポイント24倍 10/20(火)0:00〜10/21(水)23:59 美容液もスキンケアも、まとめてそろえるなら今。">
-  <div class="entry"><a class="entry-btn" href="https://event.rakuten.co.jp/brand/campaign/?scid=wi_ichi_rbd_20261020_shop_bnr_top">エントリーはこちら</a></div>
-  <p class="note">※最大ポイント24倍内訳：対象商品ポイント20倍＋エントリーでポイント5倍（共通ポイント1倍を含む）</p>
+  <img src="images/point20.jpg" alt="対象商品ポイント20倍 10/20(火)0:00〜10/21(水)23:59 美容液もスキンケアも、まとめてそろえるなら今。">
 </section>
 
 <!-- ===== W特典 ===== -->
